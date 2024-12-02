@@ -1,0 +1,136 @@
+:root {
+    --background: #EBDBB3;
+    --typeColor: #282828;
+    --primaryColor: #56734B;
+    --targetImg: url(img/gruvbox-R.svg);
+    --hamburgerImg: url(img/ubuntu-logo.svg);
+    --home-height: 100vh;
+    --home-width: 33vw;
+    --hamburger-height: 50px;
+    --hamburger-width: 50px;
+}
+body {
+    background-color: var(--background);
+}
+
+#target {
+    position: fixed;
+    transform-origin: 100% 0%;
+    flex-shrink: 0;
+    height: var(--home-height);
+    width: var(--home-width);
+    /* border: 3px solid black; */
+    background: var(--targetImg) no-repeat center/cover;
+    /* border-radius: 5px; */
+    animation: example 1s 3s ease-in-out forwards;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-play-state: paused;
+    z-index: -1;
+}
+
+@keyframes example {
+    0% {
+        background-image: var(--targetImg);
+        rotate: 0deg;
+    }
+    5%{
+        left: -3%;
+
+    }
+    10% {
+        left: -6%;
+    }
+    15%{
+        left: -9%;
+    }
+    20%{
+        left: -12%;
+    }
+    25%{
+        left: -15%;
+    }
+    30%{
+        left: -18%;
+    }
+    35%{
+        left: -21%;
+    }
+    40%{
+        left: -26%;
+    }
+    45%{
+        left: -29%;
+    }
+    50% {
+        background-image: var(--targetImg);
+        left: -30%;
+        rotate: -90deg;
+
+    }
+    85% {
+        background-image: var(--targetImg);
+        left: -2.5%;
+        width: 50px;
+        rotate: -90deg;
+    }
+    100% {
+        background-image: var(--hamburgerImg);
+        width: 50px;
+        height: 50px;
+        left: -2.5%;
+        rotate: -90deg;
+
+    }
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+}
+#content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#Lname {
+    margin-bottom: 5%;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10%;
+    color: #282828;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.444px;
+    /* 10.178% */
+    letter-spacing: 0.127px;
+}
+
+h2 {
+    margin: 0px;
+    color: var(--foreground-foreground3, #665C54);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h3 {
+    margin: 0px;
+    color: var(--foreground-foreground4, #7C6F64);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 52px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+}
