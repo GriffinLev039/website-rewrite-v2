@@ -203,6 +203,7 @@ body {
     background-image: url(img/image\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 #aboutRight {
