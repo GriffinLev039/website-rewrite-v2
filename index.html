@@ -5,7 +5,9 @@
     <!-- Sourcing Roboto from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Usual head contents -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +17,125 @@
 </head>
 
 <body>
-    <div id="target"></div>
+    <!-- FIRST SEGMENT / FIRST "PAGE"-->
+    <div id="bannerAndIcon"></div>
     <div class="page" id="content">
         <h1 class="name">Griffin</h1>
         <h1 class="name" id="Lname">Leventhal</h1>
-        <h2>Web Development Student</h2>
-        <h3>griffinleventhal@proton.me</h3>
+        <h2 class="myTitle">Web Development Student</h2>
+        <h3 class="myEmail">griffinleventhal@proton.me</h3>
+        <div id="buttonContainer">
+            <!-- <div class="button">test1</div>
+            <div class="button">test2</div>
+            <div class="button">test3</div> -->
+        </div>
     </div>
-    <div class="page" id="page2"></div>
+    <!-- SECOND SEGMENT / SECOND "PAGE" -->
+    <div class="page" id="page2">
+        <div id="aboutLeft">
+            <img id="abtImg" src="" alt="">
+        </div>
+        <div id="aboutRight">
+            <h1 class="projTitle">About Me</h1>
+            <p id="aboutTxt">I am a 20-year-old student pursuing a computer science degree at UNC Charlotte, with a
+                passion for programming and technology. I am constantly seeking out new challenges and opportunities to
+                grow my skills and expand my knowledge base. Throughout my academic career, I have excelled in my
+                computer science coursework, building a strong foundation in programming languages such as JavaScript
+                and Java. Additionally, side projects have allowed me to further my experience in these languages, and
+                create projects displaying my progress so far - most of which are visible on my Github.<br><br>
+
+                I am excited to continue exploring the many future opportunities that computer science will offer. I am
+                open to internships, research opportunities, and other experiences that will allow me to further develop
+                my skills and contribute to the industry. Thank you for taking the time to visit my profile, and please
+                don't hesitate to connect with me on Linkedin if you would like to learn more or discuss potential
+                opportunities.<br><br>
+
+                Specific technology I’m familiar with include HTML, CSS, Javscript, Node.js, Java, and the full Adobe
+                suite.<br> </p>
+        </div>
+    </div>
+    <!-- THIRD SEGMENT / THIRD "PAGE" -->
+    <div class="projPage" id="proj1">
+        <div class="projLeft">
+            <h1 class="projTitle">This Website!</h1>
+            <p class="projBio">I used industry-standard tools to design and create a personal portfolio site.</p>
+            <span class="listCaption">Technology Used:</span>
+            <ul class="projList">
+                <li>Figma</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Adobe Illustrator</li>
+            </ul>
+        </div>
+        <div class="projRight">
+            <div class="projImg">Replaced by image soon!</div>
+        </div>
+    </div>
+    <div class="projPage" id="proj2">
+        <div class="projLeft">
+            <h1 class="projTitle">Source API Discord Bot</h1>
+            <p class="projBio">I used Discord.js to create a discord bot that interacted with the Source game engine API
+                to send in-game commands. e.g) if a user ran the "kill" command followed by a username, that player
+                would die.</p>
+            <span class="listCaption">Technology Used:</span>
+            <ul class="projList">
+                <li>Node.js</li>
+                <li>Discord API</li>
+                <li>Source API</li>
+                <li>Networking</li>
+            </ul>
+        </div>
+        <div class="projRight">
+            <div class="projImg">Replaced by image soon!</div>
+
+        </div>
+    </div>
+    <div class="projPage" id="proj3">
+        <div class="projLeft">
+            <h1 class="projTitle">HTML Log Analyzer</h1>
+            <p class="projBio">I created and distributed a HTML Log parser that is given an arbitrary amount of logs
+                from the game Town of Salem, then parses those logs to provide actionable data such as role and user
+                winrates.</p>
+            <span class="listCaption">Technology Used:</span>
+            <ul class="projList">
+                <li>Object-Oriented Programming</li>
+                <li>Java</li>
+                <li>JAR</li>
+            </ul>
+        </div>
+        <div class="projRight">
+            <div class="projImg">Replaced by image soon!</div>
+
+        </div>
+    </div>
+    <div class="projPage" id="proj4">
+        <div class="projLeft">
+            <h1 class="projTitle">Project Showcase API</h1>
+            <p class="projBio">I developed a REST API that hosts a JSON file listing various details about my previous
+                projects, then parse that data via a webpage. <br>Preview at: https://jiggly.cc/api/projects</p>
+            <span class="listCaption">Technology Used:</span>
+            <ul class="projList">
+                <li>Nginx</li>
+                <li>JSON</li>
+                <li>Node.js</li>
+                <li>HTML/CSS</li>
+                <li>Digitalocean</li>
+            </ul>
+        </div>
+        <div class="projRight">
+            <div class="projImg">Replaced by image soon!</div>
+
+        </div>
+    </div>
+    <!-- FOURTH SEGMENT / FOURTH "PAGE" -->
+    <div class="page" id="resume">
+        <h1 class="projTitle">My Resume<br>  </h1>
+        <img src="img/GriffinLeventhalResume Dec2024-1.png" alt="">
+
+    </div>
+    <div id="footer">
+    </div>
 </body>
 
 </html>
